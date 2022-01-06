@@ -1,13 +1,91 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (max-width: 600px) {
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: RGB(255, 255, 255);
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 3px 1px rgb(208 209 213 / 60%);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 350px;
+  padding: 6px;
+}
+article::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-image: url(https://1c308283f6f0dbd72b44-c007ec4697a7ceab9178ce16802c0e6b.ssl.cf2.rackcdn.com/1.0/images/icon_turbo.png);
+}
+
+.card {
+  text-align: center;
+}
+.card img {
+  margin-top: 10px;
+}
+
+.card-time {
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 40px;
+  width: 95%;
+  height: 40px;
+  margin: 0;
+  background-image: linear-gradient(90deg, #4caf50 0%, #82eba6 100%);
+}
+article button {
+  margin: 20px auto;
+  text-align: center;
+  display: inline-block;
+  padding: 0.2rem 2rem;
+  border-radius: 4px;
+  border: 2px solid;
+  color: #688dbb;
+  transition: all 125ms ease;
+}
+article button p {
+  text-align: center;
+  margin: 0;
+}
+
+article button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+h6,
+p {
+  margin: 0px 0px 10px 0px;
+}
+.prezzo1 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #46c299;
 }
